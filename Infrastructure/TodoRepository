@@ -1,0 +1,16 @@
+using TodoApi.Domain.TodoItems;
+using TodoApi.Domain.Shared;
+using TodoApi.Infrastructure.Shared;
+namespace TodoApi.Infrastructure.Todoitem
+{
+    public class TodoItemRepository : BaseRepository<TodoItem, TodoItemId>, ITodoItemRepository
+    {
+    
+        public TodoItemRepository(TodoContext context):base(context.TodoItems)
+        {
+           
+        }
+
+
+    }
+}

@@ -1,0 +1,9 @@
+
+using TodoApi.Domain.Shared;
+
+namespace TodoApi.Domain.TodoItems
+{
+    public interface ITodoItemRepository: IRepository<TodoItem, TodoItemId>
+    {
+    }
+}
